@@ -13,10 +13,6 @@ def login():
 
 	if request.method == 'POST':
 
-		response = {}
-		response["id"]
-		response["usuario"]
-
 		nombre = request.form.get('nombre_usuario')
 		passw = request.form.get('passw_usuario')
 
