@@ -10,7 +10,7 @@ class CRUD_Pokemon:
 
 
 	#METODO CREAR POKEMON
-	def crear(self,nombre,especie,tipo,foto,passw):
+	def crear(self,nombre,especie,tipo,foto):
 
 		for poke in self.pokemon:
 
@@ -18,7 +18,7 @@ class CRUD_Pokemon:
 				print(' el nombre ya esta en uso')
 				return False
 
-		nuevo = Pokemon(self.contador,nombre,especie,tipo,foto,passw)		
+		nuevo = Pokemon(self.contador,nombre,especie,tipo,foto)		
 		self.pokemon.append(nuevo)	
 		self.contador += 1
 		return True
