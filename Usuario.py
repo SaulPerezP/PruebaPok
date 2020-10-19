@@ -7,7 +7,7 @@ class Usuario:
 		self.usuario = usuario
 		self.passw = passw
 
-	def auntenticar(self, usuario, passw):
+	def autenticar(self, usuario, passw):
 
 		if self.usuario == usuario and self.passw == passw:
 
@@ -17,3 +17,10 @@ class Usuario:
 		print("La autenticacion fue incorrecta")
 		return False
 					
+	def dump(self):
+	
+		return {
+
+			'id' : self.id,
+			'nombre': self.usuario
+		}				
